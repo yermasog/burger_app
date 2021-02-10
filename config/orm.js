@@ -1,5 +1,7 @@
-var connection = require("../config/connection.js");
+var connection = require("./connection.js");
 
+// The ?? signs are for swapping out table or column names
+// The ? signs are for swapping out other values
 var orm = {
   selectAll: function(tableInput, colToSearch, valOfCol, cb) {
     var queryString = "SELECT * FROM ?? WHERE ?? = ?";
