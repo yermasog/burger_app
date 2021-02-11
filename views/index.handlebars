@@ -1,25 +1,27 @@
 <h1>Burgers!</h1>
 
 <h2>Burgers that need to be eaten!</h2>
-
 <ul>
   {{#each burgers}}
   {{log burgers.burger_name}}
-    {{#unless devoured}}
-      {{> burgers/burger-block}}
-    {{/unless}}
+  {{#unless devoured}}
+  {{> burgers/burger-block}}
+  {{/unless}}
   {{/each}}
 </ul>
+
+
 
 <h2>Burgers that have been devoured!</h2>
-
 <ul>
   {{#each burgers}}
-    {{#if devoured}}
-      {{> burgers/burger-block}}
-    {{/if}}
+  {{#if devoured}}
+  {{> burgers/burger-block}}
+  {{/if}}
   {{/each}}
 </ul>
+
+
 
 <h2>Add a Burger</h2>
 <form class="create-form">

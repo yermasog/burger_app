@@ -1,12 +1,12 @@
 $(function () {
     $(".change-eat").on("click", function (event) {
         var id = $(this).data("id");
-        var newEat = $(this).data("newEat");
+        var newEat = $(this).val();
+        console.log(newEat);
 
         var newEatState = {
             devoured: newEat
         };
-
         // Send the PUT request.
         $.ajax("/api/burgers/" + id, {
             type: "PUT",
@@ -30,7 +30,7 @@ $(function () {
         };
     
         // Send the POST request.
-        $.ajax("/api/burgers", {
+        $.ajax("/api/burgers/", {
           type: "POST",
           data: newBurger
         }).then(
