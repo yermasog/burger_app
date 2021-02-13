@@ -5,5 +5,5 @@ A small app that allows the user to create new burgers and mark which ones have 
 
 <img src="public\assets\images\Screenshot 2021-02-11 002112.png">
 
-Deployed link:
+Deployed link: https://calm-woodland-72571.herokuapp.com/
 
